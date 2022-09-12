@@ -928,6 +928,103 @@ section {
     }
 }
 
+// flash-sale-section
+
+.flash-sale-section {
+    background-color: var(--color-theme-dark);
+    margin-top: 7rem;
+    height: 435px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .flash-sale {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 280px;
+            height: 265px;
+            background-color: var(--color-theme);
+
+            h1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 3.7rem;
+                color: var(--color-white);
+                font-family: var(--font-play);
+                font-weight: var(--font-weight-bold);
+            }
+
+            p {
+                color: var(--color-white);
+                font-weight: var(--font-weight-medium);
+                font-size: 1.3rem;
+            }
+        }
+
+        .flash-countdown {
+            margin-top: 9rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .countdown-circles {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+
+                .circle {
+                    width: 109px;
+                    height: 109px;
+                    background-color: var(--color-white);
+                    border-radius: var(--border-radius-rounded);
+                    outline: var(--color-theme);
+                    outline-style: dotted;
+
+                    h1 {
+                        font-family: var(--font-play);
+                        font-weight: var(--font-weight-bold);
+                        color: var(--color-theme);
+                        margin-top: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        font-weight: var(--font-weight-regular);
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            button {
+                border-radius: var(--border-radius-medium);
+                padding: 0.6rem 1.5rem;
+                margin-top: 3rem;
+                border: none;
+                font-size: 1rem;
+                font-weight: var(--font-weight-medium);
+                color: var(--color-theme);
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+
+}
+
 @media (min-width: 578px) {
     .top-menu {
         .menu-links {

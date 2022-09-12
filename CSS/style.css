@@ -738,6 +738,88 @@ section .container .section-info button:hover {
   color: var(--color-theme);
 }
 
+.flash-sale-section {
+  background-color: var(--color-theme-dark);
+  margin-top: 7rem;
+  height: 435px;
+}
+.flash-sale-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flash-sale-section .container .flash-sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 280px;
+  height: 265px;
+  background-color: var(--color-theme);
+}
+.flash-sale-section .container .flash-sale h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.7rem;
+  color: var(--color-white);
+  font-family: var(--font-play);
+  font-weight: var(--font-weight-bold);
+}
+.flash-sale-section .container .flash-sale p {
+  color: var(--color-white);
+  font-weight: var(--font-weight-medium);
+  font-size: 1.3rem;
+}
+.flash-sale-section .container .flash-countdown {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flash-sale-section .container .flash-countdown .countdown-circles {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.flash-sale-section .container .flash-countdown .countdown-circles .circle {
+  width: 109px;
+  height: 109px;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-rounded);
+  outline: var(--color-theme);
+  outline-style: dotted;
+}
+.flash-sale-section .container .flash-countdown .countdown-circles .circle h1 {
+  font-family: var(--font-play);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-theme);
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.flash-sale-section .container .flash-countdown .countdown-circles .circle p {
+  font-weight: var(--font-weight-regular);
+  display: flex;
+  justify-content: center;
+}
+.flash-sale-section .container .flash-countdown button {
+  border-radius: var(--border-radius-medium);
+  padding: 0.6rem 1.5rem;
+  margin-top: 3rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-theme);
+  transition: 0.3s ease-in-out;
+}
+.flash-sale-section .container .flash-countdown button:hover {
+  background-color: var(--color-theme);
+  color: var(--color-white);
+}
+
 @media (min-width: 578px) {
   .top-menu .menu-links {
     display: block;
