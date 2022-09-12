@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tutorial">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenkata</title>
+    <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-menu">
+            <div class="container">
+                <div class="site-settings">
+
+                    <div class="dropdown dropdown-theme">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="languages" class="dropdown-menu dropdown-theme me-3">
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">SWE</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown dropdown-theme me-3">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="currencies" class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">SEK</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu-links">
+                    <span class="links">
+                    <a href="">Newsletter</a>
+                    <a href="">Contact us</a>
+                    <a href="">FAQs</a>
+                  </span>
+                    <span class="social-media">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div class="container">
+                <div class="brand">
+                    <a href="index.html"><img src="images/logotype.svg" alt="Kenkata Webshop"></a>
+                </div>
+
+                <div class="search">
+
+                </div>
+
+                <div class="menu-links">
+                    <a class="menu-link" href=""><i class="fa-regular fa-user me-2"></i>My account</a>
+                    <a class="menu-link" href=""><i class="fa-regular fa-heart"></i></a>
+                    <a class="menu-link" href=""><i class="fa-regular fa-shuffle"></i></a>
+                    <a id="cart" class="menu-link" href="">
+                        <span class="badge rounded-pill bg-theme">99+</span>
+                        <i class="fa-regular fa-cart-shopping me-2"></i>
+                        <span id="cart-total">€999999.00</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav>
+                <div class="container">
+
+                    <div class="browse-categories">
+                        <div class="dropdown dropdown-theme">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>
+                      <i class="fa-regular fa-bars me-3"></i>Browse Categories
+                    </span>
+                    <i class="fa-regular fa-chevron-down ms-4"></i>
+                  </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Computers</a></li>
+                                <li><a class="dropdown-item" href="#">TV & Displays</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="special-offers">
+                        <button class="btn btn-theme">SPECIAL OFFER</button>
+                    </div>
+                </div>
+
+            </nav>
+
+
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="section-info">
+                <h1>Shopping is <span class="h1-bold">MORE FUN</span></h1>
+                <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
+                <a href=""><button  type="button">SHOP NOW</button></a>
+            </div>
+
+            <div class="section-thumbnail">
+                <img src="images/thumbnail.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="info-boxes">
+        <div class="container-fluid">
+            <div class="box">
+                <div class="box-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="53.34" viewBox="0 0 50 53.34">
+                    <g id="Group_1155" data-name="Group 1155" transform="translate(-482.5 -163.206)">
+                      <path id="Path_593" data-name="Path 593" d="M532.058,174.975,507.84,163.284a.78.78,0,0,0-.68,0l-24.218,11.691a.783.783,0,0,0-.442.7v28.394a.782.782,0,0,0,.442.7l24.218,11.692a.789.789,0,0,0,.68,0l24.218-11.692a.782.782,0,0,0,.442-.7V175.679A.783.783,0,0,0,532.058,174.975ZM507.5,164.855l22.421,10.824-6.5,3.138a.757.757,0,0,0-.132-.084l-22.27-10.75Zm-8.244,4.011,22.389,10.809-4.586,2.214-22.379-10.8Zm22.913,12.291v8.183l-4.284,2.068v-8.183Zm8.768,22.426h0L508.281,214.52V187.861l5.4-2.609a.781.781,0,0,0-.68-1.407L507.5,186.5l-2.167-1.046a.781.781,0,0,0-.679,1.407l2.065,1V214.52l-22.656-10.937V176.924l17.252,8.329a.782.782,0,0,0,.679-1.408l-16.915-8.166,7.762-3.747,23.471,11.331.011.014v9.376a.781.781,0,0,0,1.121.7l5.846-2.822a.779.779,0,0,0,.441-.7V180.4l7.206-3.479Z" fill="#20d3c2"/>
+                      <path id="Path_594" data-name="Path 594" d="M490.511,200.553l-3.554-1.716a.781.781,0,1,0-.68,1.407l3.554,1.716a.781.781,0,1,0,.68-1.407Z" fill="#20d3c2"/>
+                      <path id="Path_595" data-name="Path 595" d="M493.782,198.423l-6.82-3.292a.781.781,0,1,0-.68,1.407l6.82,3.293a.782.782,0,0,0,.68-1.408Z" fill="#20d3c2"/>
+                    </g>
+                  </svg>
+
+                </div>
+                <div class="box-text">
+                    <h1>Free shipping</h1>
+                    <p>For a local customer, we provide free shipping facility</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="49.564" viewBox="0 0 50 49.564">
+                    <g id="_24_icon" data-name="24 icon" transform="translate(-117.78 -479.751)">
+                      <path id="Path_30" data-name="Path 30" d="M162.728,524.3h.007a.742.742,0,0,0,.742-.736c0-.34.009-1.037.015-1.89h.4a.742.742,0,1,0,0-1.484h-.39c.013-2.2.021-4.65-.005-4.973a1.378,1.378,0,0,0-.9-1.247,1.286,1.286,0,0,0-1.416.533c-.505.619-3.022,5.165-3.521,6.07a.743.743,0,0,0,.65,1.1h3.7c0,.665-.01,1.306-.015,1.877A.742.742,0,0,0,162.728,524.3Zm-3.162-4.11c.976-1.752,1.959-3.478,2.462-4.3.006.857,0,2.547-.011,4.3Z" fill="#20d3c2"/>
+                      <path id="Path_31" data-name="Path 31" d="M154.263,518.916c-1.412,2.017-2.255,3.121-2.708,3.714-.545.714-.728.954-.6,1.382a.787.787,0,0,0,.512.517c.359.119,3.725.065,4.778.052a.742.742,0,0,0-.019-1.484c-1.117.014-2.313.022-3.179.02.5-.659,1.278-1.706,2.429-3.35a5.575,5.575,0,0,0,1.124-2.7,3.018,3.018,0,0,0-5.98-.584.742.742,0,0,0,1.457.286,1.534,1.534,0,0,1,3.039.255,3.662,3.662,0,0,1-.856,1.893Z" fill="#20d3c2"/>
+                      <path id="Path_32" data-name="Path 32" d="M152,492a.742.742,0,0,0,1.05,0l.859-.859a17.444,17.444,0,0,1,4.624,11.845c0,.372-.012.745-.036,1.117l-.733-.839a.742.742,0,0,0-1.117.978l1.783,2.039a.755.755,0,0,0,1.064.194l2.285-1.647a.744.744,0,0,0,.168-1.037h0a.742.742,0,0,0-1.036-.167l-.94.677q.045-.657.046-1.315a18.982,18.982,0,1,0-15.063,18.593.742.742,0,1,0-.307-1.452,17.664,17.664,0,0,1-2.89.36v-1.224a.742.742,0,1,0-1.484,0v1.224a17.45,17.45,0,0,1-11.1-4.607l.859-.86a.742.742,0,0,0-1.049-1.049l-.86.859a17.453,17.453,0,0,1-4.607-11.1h1.224a.742.742,0,0,0,0-1.484h-1.223a17.451,17.451,0,0,1,4.606-11.1l.86.86a.742.742,0,1,0,1.049-1.05l-.859-.859a17.45,17.45,0,0,1,11.1-4.607v1.223a.742.742,0,0,0,1.484,0v-1.223a17.45,17.45,0,0,1,11.1,4.607l-.86.86A.743.743,0,0,0,152,492Z" fill="#20d3c2"/>
+                      <path id="Path_33" data-name="Path 33" d="M149.46,502.245h-5.535a3.012,3.012,0,0,0-2.166-2.166v-8.6a.742.742,0,1,0-1.484,0v8.6a3,3,0,1,0,3.65,3.651h5.535a.743.743,0,0,0,0-1.485Zm-8.443,2.26a1.518,1.518,0,1,1,1.517-1.518A1.519,1.519,0,0,1,141.017,504.505Z" fill="#20d3c2"/>
+                      <path id="Path_34" data-name="Path 34" d="M167.038,518.332Z" fill="#20d3c2"/>
+                      <path id="Path_35" data-name="Path 35" d="M167.038,520.317a.742.742,0,0,0-.742.742v3.7a3.073,3.073,0,0,1-3.07,3.07H151.92a3.073,3.073,0,0,1-3.069-3.07v-11.3a3.073,3.073,0,0,1,3.069-3.07h11.306a3.073,3.073,0,0,1,3.07,3.07v4.134a.742.742,0,0,0,1.484,0v-4.134a4.56,4.56,0,0,0-4.289-4.546A23.216,23.216,0,1,0,147.4,525.334a4.559,4.559,0,0,0,4.517,3.981h11.3a4.559,4.559,0,0,0,4.554-4.554v-3.7A.742.742,0,0,0,167.038,520.317Zm-19.672-6.861h0V523.8A21.733,21.733,0,1,1,161.955,508.9H151.92A4.559,4.559,0,0,0,147.366,513.456Z" fill="#20d3c2"/>
+                    </g>
+                  </svg>
+
+                </div>
+                <div class="box-text">
+                    <h1>24/7 support</h1>
+                    <p>For any inquiry, we are available 24 hours every day</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <g id="payment_icon" data-name="payment icon" transform="translate(-150.439 -539.461)">
+                      <path id="Path_36" data-name="Path 36" d="M197.4,565.616a3.145,3.145,0,0,0-1.088.194,2.984,2.984,0,0,0-3.033-2.981,3.145,3.145,0,0,0-1.262.263,2.963,2.963,0,0,0-2.86-2.018,3.172,3.172,0,0,0-1.085.192V542.138a2.679,2.679,0,0,0-2.676-2.677H162.945a2.679,2.679,0,0,0-2.676,2.677v8.479h-8.853a.976.976,0,0,0-.977.977V566.1a.976.976,0,0,0,.977.977h8.853v13.335a2.679,2.679,0,0,0,2.676,2.676h18.523c1.2,1.48,1.2,2.766,1.2,4.371a2,2,0,0,0,2,2h1.719a.977.977,0,1,0,0-1.953h-1.719a.048.048,0,0,1-.045-.045,7.707,7.707,0,0,0-1.923-5.936,9.851,9.851,0,0,0-1.572-1.323c-1.037-.757-1.667-1.265-1.667-1.924l0-3.071v-4.052a.727.727,0,0,1,.165-.549,1.171,1.171,0,0,1,.916.081A2.267,2.267,0,0,1,182,572.822v3.109a.977.977,0,1,0,1.953,0V559.142a1.065,1.065,0,0,1,1.084-1.2,1.1,1.1,0,0,1,.748.28,1.215,1.215,0,0,1,.337.924v11.283a.977.977,0,1,0,1.953,0v-6.2a1.064,1.064,0,0,1,1.084-1.2,1.1,1.1,0,0,1,.748.28,1.212,1.212,0,0,1,.336.923v7.231a.977.977,0,0,0,1.954,0v-5.476a1.064,1.064,0,0,1,1.084-1.2,1.1,1.1,0,0,1,.748.28,1.212,1.212,0,0,1,.336.923v6.508a.977.977,0,1,0,1.953,0v-3.72a1.065,1.065,0,0,1,1.085-1.2,1.1,1.1,0,0,1,.748.28,1.214,1.214,0,0,1,.336.924v9.842a6.511,6.511,0,0,1-.795,2.626,5.777,5.777,0,0,0-.766,3.064v3.158a.05.05,0,0,1-.045.045h-1.719a.977.977,0,1,0,0,1.953h1.719a2,2,0,0,0,2-2V584.3a3.884,3.884,0,0,1,.55-2.17,8.424,8.424,0,0,0,1.005-3.361.924.924,0,0,0,.006-.1v-9.9A3,3,0,0,0,197.4,565.616Zm-28.9-24.2h11.342v1.044a1.048,1.048,0,0,1-1.047,1.049h-9.248a1.049,1.049,0,0,1-1.047-1.049ZM152.392,552.57h2.731a3.864,3.864,0,0,1-2.731,2.764Zm0,12.558v-2.764a3.862,3.862,0,0,1,2.731,2.764Zm4.725,0a5.814,5.814,0,0,0-4.725-4.76V557.33a5.814,5.814,0,0,0,4.725-4.76h14.1v12.558Zm5.828,16.011h0a.724.724,0,0,1-.723-.723v-2.249h15.287v.114a3.707,3.707,0,0,0,1.624,2.858Zm23.175-24.962a3.168,3.168,0,0,0-1.085-.192,3.026,3.026,0,0,0-2.085.81,3.108,3.108,0,0,0-.951,2.347v10.1a4.393,4.393,0,0,0-.757-.381,2.9,2.9,0,0,0-2.71.123,2.462,2.462,0,0,0-1.026,2.143v5.082H162.222v-9.133h8.992V568.5a.977.977,0,0,0,1.953,0V549.2a.977.977,0,0,0-1.953,0v1.421h-8.992v-8.479a.723.723,0,0,1,.723-.723h3.6v1.044a3,3,0,0,0,3,3h9.248a3,3,0,0,0,3-3v-1.044h3.6a.723.723,0,0,1,.723.723Z" fill="#20d3c2"/>
+                      <path id="Path_37" data-name="Path 37" d="M163.933,554.6a4.251,4.251,0,1,0,4.226,4.251A4.243,4.243,0,0,0,163.933,554.6Zm0,6.549a2.3,2.3,0,1,1,2.273-2.3A2.288,2.288,0,0,1,163.933,561.147Z" fill="#20d3c2"/>
+                      <path id="Path_38" data-name="Path 38" d="M190.776,587.508a.977.977,0,1,0,0,1.953h0a.977.977,0,0,0,0-1.953Z" fill="#20d3c2"/>
+                    </g>
+                  </svg>
+
+                </div>
+                <div class="box-text">
+                    <h1>Online payment</h1>
+                    <p>You can pay quickly and easily with our online payment system</p>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="box-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="54.464" viewBox="0 0 50 54.464">
+                    <g id="Outline" transform="translate(-605 -156.894)">
+                      <path id="Path_596" data-name="Path 596" d="M615.185,174.321a14.815,14.815,0,1,0,23.007-12.338l.943-1.633,1.6.926.926-1.6-4.811-2.778-.926,1.6,1.6.926-.941,1.631a14.8,14.8,0,0,0-13.18,0l-.941-1.631,1.6-.926-.926-1.6-4.811,2.778.926,1.6,1.6-.926.943,1.633a14.815,14.815,0,0,0-6.623,12.338Zm27.778,0A12.963,12.963,0,1,1,630,161.358,12.963,12.963,0,0,1,642.963,174.321Z" fill="#20d3c2"/>
+                      <path id="Path_597" data-name="Path 597" d="M629.074,163.21h1.852v1.852h-1.852Z" fill="#20d3c2"/>
+                      <path id="Path_598" data-name="Path 598" d="M623.642,165.161l1.6-.926.926,1.6-1.6.926Z" fill="#20d3c2"/>
+                      <path id="Path_599" data-name="Path 599" d="M619.914,169.568l.926-1.6,1.6.926-.926,1.6Z" fill="#20d3c2"/>
+                      <path id="Path_600" data-name="Path 600" d="M618.889,173.4h1.852v1.852h-1.852Z" fill="#20d3c2"/>
+                      <path id="Path_601" data-name="Path 601" d="M619.914,179.074l1.6-.926.926,1.6-1.6.926Z" fill="#20d3c2"/>
+                      <path id="Path_602" data-name="Path 602" d="M623.642,183.481l.926-1.6,1.6.926-.926,1.6Z" fill="#20d3c2"/>
+                      <path id="Path_603" data-name="Path 603" d="M629.074,183.58h1.852v1.852h-1.852Z" fill="#20d3c2"/>
+                      <path id="Path_604" data-name="Path 604" d="M633.827,182.8l1.6-.926.925,1.6-1.6.925Z" fill="#20d3c2"/>
+                      <path id="Path_605" data-name="Path 605" d="M637.555,179.753l.926-1.6,1.6.926-.926,1.6Z" fill="#20d3c2"/>
+                      <path id="Path_606" data-name="Path 606" d="M639.259,173.4h1.852v1.852h-1.852Z" fill="#20d3c2"/>
+                      <path id="Path_607" data-name="Path 607" d="M637.555,168.889l1.6-.926.925,1.6-1.6.926Z" fill="#20d3c2"/>
+                      <path id="Path_608" data-name="Path 608" d="M633.828,165.84l.925-1.6,1.6.926-.926,1.6Z" fill="#20d3c2"/>
+                      <path id="Path_609" data-name="Path 609" d="M630,175.247h7.407V173.4h-6.481v-6.482h-1.852v7.408A.927.927,0,0,0,630,175.247Z" fill="#20d3c2"/>
+                      <path id="Path_610" data-name="Path 610" d="M654.346,177.14l-7.407-2.28-.545,1.77,4.532,1.395-5.457,1.679.545,1.77,7.134-2.2v23.063l-22.222,6.837v-18.19h-1.852v18.19l-22.222-6.837V179.278l7.135,2.2.545-1.77-5.458-1.679,4.531-1.395-.544-1.77-7.408,2.28a.925.925,0,0,0-.653.885v25a.927.927,0,0,0,.654.885l24.074,7.407a.917.917,0,0,0,.544,0l24.074-7.407a.927.927,0,0,0,.654-.885v-25A.925.925,0,0,0,654.346,177.14Z" fill="#20d3c2"/>
+                      <path id="Path_611" data-name="Path 611" d="M624.444,195.76a.926.926,0,0,0,.926-.926V190.2a.927.927,0,0,0-.653-.885l-12.963-3.989a.926.926,0,0,0-1.157.613.9.9,0,0,0-.041.272v4.63a.926.926,0,0,0,.653.885l12.963,3.989A.929.929,0,0,0,624.444,195.76Zm-.925-2.18-11.112-3.419v-2.692l11.112,3.419Z" fill="#20d3c2"/>
+                      <path id="Path_612" data-name="Path 612" d="M649.069,185.471a.928.928,0,0,0-.823-.141l-12.963,3.989a.927.927,0,0,0-.653.885v4.63a.926.926,0,0,0,1.2.885l12.963-3.989a.926.926,0,0,0,.653-.885v-4.63A.925.925,0,0,0,649.069,185.471Zm-1.476,4.69-11.112,3.419v-2.692l11.112-3.419Z" fill="#20d3c2"/>
+                      <path id="Path_613" data-name="Path 613" d="M641.77,202.153l1.853-.57.544,1.771-1.852.569Z" fill="#20d3c2"/>
+                      <path id="Path_614" data-name="Path 614" d="M645.475,201.013l1.852-.569.545,1.77-1.853.57Z" fill="#20d3c2"/>
+                      <path id="Path_615" data-name="Path 615" d="M649.179,199.874l1.853-.57.544,1.771-1.852.569Z" fill="#20d3c2"/>
+                      <path id="Path_616" data-name="Path 616" d="M617.7,203.9l.544-1.77,1.853.569-.545,1.771Z" fill="#20d3c2"/>
+                      <path id="Path_617" data-name="Path 617" d="M621.4,205.042l.544-1.771,1.852.57-.544,1.77Z" fill="#20d3c2"/>
+                      <path id="Path_618" data-name="Path 618" d="M625.107,206.18l.545-1.771,1.852.57-.545,1.77Z" fill="#20d3c2"/>
+                    </g>
+                  </svg>
+
+                </div>
+                <div class="box-text">
+                    <h1>Fast delivery</h1>
+                    <p>We understand your urgency and we deliver in a fast way</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="categories-top">
+        <div class="container">
+            <div class="categories-header">
+                <h2>SHOP BY&nbsp;<span class="category-header-span">CATEGORY</span></h2>
+                <div class="underline-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256.234" height="10.542" viewBox="0 0 256.234 10.542">
+                    <path id="Path_44" data-name="Path 44" d="M405,372.826l10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.194-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.205-8,10.2,8,10.209-8,10.209,8" transform="translate(-404.383 -371.555)" fill="none" stroke="#e3e3e3" stroke-miterlimit="10" stroke-width="2"/>
+                  </svg>
+                </div>
+                <p>We always try to give you the best product within a fast and reliable way</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories-main mt-5">
+      <div class="container">
+        <div class="categories">
+
+          <a href="#" class="men">
+            <div class="categories-info">
+              <p>Men</p>
+              <span>12 Products</span>
+            </div>
+          </a>
+          
+          <a href="#" class="women">
+            <div class="categories-info">
+              <p>Women</p>
+              <span>14 Products</span>
+            </div>
+          </a>
+
+          <a href="#" class="kids">
+            <div class="categories-info">
+              <p>Kids</p>
+              <span>11 Products</span>
+            </div>
+          </a>
+
+          <a href="#" class="shoes">
+            <div class="categories-info">
+              <p>Shoes</p>
+              <span>16 Products</span>
+            </div>
+          </a>
+
+          <a href="#" class="hats">
+            <div class="categories-info">
+              <p>Hats</p>
+              <span>25 Products</span>
+            </div>
+          </a>
+
+          <a href="#" class="sunglasses">
+            <div class="categories-info">
+              <p>Sunglasses</p>
+              <span>18 Products</span>
+            </div>
+          </a>
+
+          <a href="#" class="watches">
+            <div class="categories-info">
+              <p>Watches</p>
+              <span>30 Products</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="new-arrivals">
+      <div class="container">
+          <div class="new-arrivals-header">
+              <h2>NEW &nbsp;<span class="new-top-header-span">ARRIVALS</span></h2>
+              <div class="underline-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="256.234" height="10.542" viewBox="0 0 256.234 10.542">
+                  <path id="Path_44" data-name="Path 44" d="M405,372.826l10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.194-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.2-8,10.2,8,10.205-8,10.2,8,10.209-8,10.209,8" transform="translate(-404.383 -371.555)" fill="none" stroke="#e3e3e3" stroke-miterlimit="10" stroke-width="2"/>
+                </svg>
+              </div>
+              <p>Check out our latest products from top fashion designers</p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-1 mt-5">
+
+            <div class="col">
+              <div class="card h-100">
+                <ul class="card-menu">
+                  <li>                    
+                      <i class="fa-solid fa-circle instock"></i>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-shuffle"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-magnifying-glass"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-cart-shopping"></i>
+                    </a>
+                  </li>
+                </ul>
+
+                <img src="images/cards/card-thumb-1.png" class="card-img-top" alt="placeholder image">
+
+                <div class="card-body">
+                  <h1>Blue silk flare sleeved top</h1>
+                  <button disabled>Fashion</button>
+                  <p class="card-old-price">€50.00</p>
+                  <div class="d-flex justify-content-between align-items-center w-100">
+                    <p class="card-discount-price">€20.00</p>
+                    <div class="card-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="card-background"></div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <ul class="card-menu">
+                  <li>                    
+                      <i class="fa-solid fa-circle instock"></i>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-shuffle"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-magnifying-glass"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-cart-shopping"></i>
+                    </a>
+                  </li>
+                </ul>
+
+                <img src="images/cards/card-thumb-2.png" class="card-img-top" alt="placeholder image">
+
+                <div class="card-body">
+                  <h1>New look men's coat</h1>
+                  <button disabled>Fashion</button>
+                  <p class="card-old-price">€70.00</p>
+                  <div class="d-flex justify-content-between align-items-center w-100">
+                    <p class="card-discount-price">€50.00</p>
+                    <div class="card-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="card-background"></div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <ul class="card-menu">
+                  <li>                    
+                      <i class="fa-solid fa-circle instock"></i>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-shuffle"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-magnifying-glass"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="fa-regular fa-cart-shopping"></i>
+                    </a>
+                  </li>
+                </ul>
+
+                <img src="images/cards/card-thumb-3.png" class="card-img-top" alt="placeholder image">
+
+                <div class="card-body">
+                  <h1>Circle pattern girls shirt</h1>
+                  <button disabled>Fashion</button>
+                  <p class="card-old-price">€35.00</p>
+                  <div class="d-flex justify-content-between align-items-center w-100">
+                    <p class="card-discount-price">€15.00</p>
+                    <div class="card-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="card-background"></div>
+              </div>
+            </div>
+     
+          </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+  </div>
+
+
+
+  
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>
