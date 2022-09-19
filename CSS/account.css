@@ -151,6 +151,37 @@ body {
 .main-menu .search {
   flex: 3;
 }
+.main-menu .search #searchboxForm {
+  border-radius: var(--border-radius-medium);
+  height: 45px;
+  margin: auto;
+  position: relative;
+}
+.main-menu .search #searchboxForm input {
+  position: absolute;
+  border-radius: var(--border-radius-medium);
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--color-gray-2);
+  font-size: 0.9rem;
+  padding-left: 1.3rem;
+}
+.main-menu .search #searchboxForm button {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  width: 50px;
+  height: 100%;
+  background-color: var(--color-theme);
+  color: var(--color-white);
+  border: none;
+  border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+  transition: 0.3s ease-in-out;
+}
+.main-menu .search #searchboxForm button:hover {
+  background-color: var(--color-theme-dark);
+}
 .main-menu .menu-links {
   flex: 2;
   display: flex;
