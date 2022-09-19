@@ -106,7 +106,7 @@
         </div>
     </header>
 
-    <section>
+    <section class="account">
         <div class="container">
 
             <div class="my-account">
@@ -119,6 +119,105 @@
             </ol> 
         </div>
     </section>
+
+    <section class="login-register">
+        <div class="container">
+
+            <div class="login">
+                <h2>LOGIN</h2>
+                <form id="loginForm">
+
+                    <div class="mb-4">
+                        <label for="login_email">Email address <span class="required">*</span></label>
+                        <input id="login_email" type="email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="login_password">Password <span class="required">*</span></label>
+                        <input id="login_password" type="password" required>
+                    </div>
+                    <div class="mb-4 d-grid">
+                        <button type="submit" class="btn btn-lg btn-theme">LOG IN</button>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <input id="login_rememberMe" type="checkbox">
+                            <label for="login_rememberMe">Remember me</label>
+                        </div>
+  
+                        <a href="#">Lost your password?</a>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="external-logins">
+                            <div class="label">OR LOGIN WITH</div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                    <div class="external-socialmedia-buttons mt-5 mb-2">
+                        <div class="facebook-button">
+                            <button></button>
+                        </div>
+
+                        <div class="google-button">
+                            <button></button>
+                        </div>
+                        
+                        
+                    </div>
+
+
+
+
+
+                </form>
+            </div>
+
+            <div class="register">
+                <h2>REGISTER</h2>
+                <p class="upper-text">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.
+                </p>
+
+                <form id="registerForm">
+
+                    <div class="mb-4">
+                        <label for="register_firstName">First Name <span class="required">*</span></label>
+                        <input id="register_firstName" type="text" autocomplete="given-name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="register_lastName">Last Name <span class="required">*</span></label>
+                        <input id="register_lastName" type="text" autocomplete="family-name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="register_email">Email address <span class="required">*</span></label>
+                        <input id="register_email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="register_password">Password <span class="required">*</span></label>
+                        <input id="register_password" type="password" autocomplete="email" required>
+                    </div>
+
+                    <p class="lower-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a></p>
+
+                    <div class="mb-3 d-grid">
+                        <button type="submit" class="btn btn-lg btn-theme">REGISTER</button>
+                    </div>
+
+
+                </form>
+
+
+
+                
+
+
+            </div>
+        </div>
+
+    </section>
+
+
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

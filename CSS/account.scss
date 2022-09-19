@@ -12,6 +12,7 @@
     --color-gray-2: #E3E3E3;
     --color-gray-3: #EEEEEE;
     --color-gray-4: #F6F6F6;
+    --color-gray-5: #777777;
     --color-product-instock: #82D8C6;
     --color-product-outofstock: #FE6C6C;
     --font-play: 'Play', sans-serif;
@@ -66,6 +67,10 @@ body {
 
 .outofstock {
     color: var(--color-product-outofstock);
+}
+
+.required {
+    color: var(--color-theme);
 }
 
 // Menu
@@ -271,9 +276,9 @@ body {
     }
 }
 
-// Account - section
+// Account section
 
-section {
+.account {
     display: flex;
     height: 140px;
     background-color: var(--color-theme-dark-light);
@@ -325,3 +330,216 @@ section {
 }
 
 // login & register
+
+.login-register {
+    margin-top: 7rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .login {
+            padding: 1.3rem;
+            width: 49%;
+            background-color: var(--color-gray-4);
+            border-radius: var(--border-radius-small);
+            height: 100%;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            #loginForm {
+
+                [type=checkbox] {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                input [type=text],
+                [type=email],
+                [type=password] {
+                    display: block;
+                    width: 100%;
+                    border-radius: 7px;
+                    border: none;
+                    padding: 0.5rem 0.9rem;
+                    margin: 0.3rem 0;
+
+                    &:focus {
+                        outline: 0;
+                        box-shadow: 0 0 3px 0 var(--color-theme-dark);
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--color-theme);
+                    font-size: 1rem;
+
+                    &:hover {
+                        color: var(--color-theme-dark);
+                        font-weight: var(--font-weight-medium);
+                    }
+                }
+            }
+
+            .external-logins {
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .label {
+                    position: absolute;
+                    background-color: var(--color-gray-4);
+                    padding: 0 0.8rem;
+                    z-index: 1;
+                    font-weight: var(--font-weight-medium);
+                }
+
+                .line {
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    border: 1px solid var(--color-gray-0);
+                    z-index: 0;
+                    opacity: 0.5;
+                }
+            }
+
+            .external-socialmedia-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2rem;
+
+                .facebook-button {
+                    text-align: left;
+
+                    button {
+                        background-image: url(../images/Buttons/facebook-login-button.png);
+                        background-repeat: no-repeat;
+                        border: none;
+                        height: 42px;
+                        width: 235px;
+
+                        &:hover {
+                            filter: brightness(90%);
+                        }
+                    }
+                }
+
+                .google-button {
+                    text-align: right;
+
+                    button {
+                        background-image: url(../images/Buttons/google-login-button.png);
+                        background-repeat: no-repeat;
+                        border: none;
+                        height: 42px;
+                        width: 235px;
+
+                        &:hover {
+                            filter: brightness(90%);
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .register {
+            padding: 2rem 1.5rem;
+            width: 49%;
+            background-color: var(--color-gray-4);
+            border-radius: var(--border-radius-small);
+            height: 100%;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .upper-text {
+                margin-top: 1rem;
+                color: var(--color-gray-5);
+                font-size: 0.875rem;
+                line-height: 2;
+            }
+
+            #registerForm {
+
+                input,
+                [type=text],
+                [type=email],
+                [type=password] {
+                    display: block;
+                    width: 100%;
+                    border-radius: 7px;
+                    border: none;
+                    padding: 0.5rem 0.9rem;
+                    margin: 0.3rem 0;
+
+                    &:focus {
+                        outline: 0;
+                        box-shadow: 0 0 3px 0 var(--color-theme-dark);
+                    }
+                }
+
+                .lower-text {
+                    margin-top: 1rem;
+                    font-size: 1rem;
+
+                    a {
+                        color: var(--color-theme);
+                        text-decoration: none;
+                        font-weight: var(--font-weight-medium);
+
+                        &:hover {
+                            color: var(--color-theme-dark);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+            }
+
+
+
+
+        }
+    }
+}
+
+
+
+@media (min-width: 578px) {
+    .top-menu {
+        .menu-links {
+            display: block;
+
+            .social-media {
+                display: inline;
+            }
+        }
+
+        .container {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .top-menu {
+        .container {
+            justify-content: space-between;
+        }
+
+        .menu-links {
+            .links {
+                display: inline;
+            }
+        }
+
+    }
+}

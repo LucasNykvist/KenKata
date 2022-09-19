@@ -11,6 +11,7 @@
   --color-gray-2: #E3E3E3;
   --color-gray-3: #EEEEEE;
   --color-gray-4: #F6F6F6;
+  --color-gray-5: #777777;
   --color-product-instock: #82D8C6;
   --color-product-outofstock: #FE6C6C;
   --font-play: "Play", sans-serif;
@@ -61,6 +62,10 @@ body {
 
 .outofstock {
   color: var(--color-product-outofstock);
+}
+
+.required {
+  color: var(--color-theme);
 }
 
 .top-menu {
@@ -222,40 +227,207 @@ body {
   align-items: center;
 }
 
-section {
+.account {
   display: flex;
   height: 140px;
   background-color: var(--color-theme-dark-light);
 }
-section .container {
+.account .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-section .container .my-account h1 {
+.account .container .my-account h1 {
   color: var(--color-theme);
   font-size: 1.5rem;
   font-weight: var(--font-weight-medium);
   margin: 0;
 }
-section .container .breadcrumb {
+.account .container .breadcrumb {
   margin: 0;
 }
-section .container .breadcrumb .breadcrumb-item:nth-child(1) a {
+.account .container .breadcrumb .breadcrumb-item:nth-child(1) a {
   text-decoration: none;
   color: var(--color-theme);
   font-size: 1rem;
 }
-section .container .breadcrumb .breadcrumb-item:nth-child(1) a:hover {
+.account .container .breadcrumb .breadcrumb-item:nth-child(1) a:hover {
   color: var(--color-white);
   text-decoration: underline;
 }
-section .container .breadcrumb .breadcrumb-item:nth-child(2) a {
+.account .container .breadcrumb .breadcrumb-item:nth-child(2) a {
   text-decoration: none;
   color: var(--color-white);
   font-size: 1rem;
 }
-section .container .breadcrumb .breadcrumb-item:nth-child(2) a:hover {
+.account .container .breadcrumb .breadcrumb-item:nth-child(2) a:hover {
   color: var(--color-white);
   text-decoration: underline;
+}
+
+.login-register {
+  margin-top: 7rem;
+}
+.login-register .container {
+  display: flex;
+  justify-content: space-between;
+}
+.login-register .container .login {
+  padding: 1.3rem;
+  width: 49%;
+  background-color: var(--color-gray-4);
+  border-radius: var(--border-radius-small);
+  height: 100%;
+}
+.login-register .container .login h1 {
+  font-size: 1.5rem;
+}
+.login-register .container .login #loginForm [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.login-register .container .login #loginForm input [type=text],
+.login-register .container .login #loginForm [type=email],
+.login-register .container .login #loginForm [type=password] {
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  margin: 0.3rem 0;
+}
+.login-register .container .login #loginForm input [type=text]:focus,
+.login-register .container .login #loginForm [type=email]:focus,
+.login-register .container .login #loginForm [type=password]:focus {
+  outline: 0;
+  box-shadow: 0 0 3px 0 var(--color-theme-dark);
+}
+.login-register .container .login #loginForm a {
+  text-decoration: none;
+  color: var(--color-theme);
+  font-size: 1rem;
+}
+.login-register .container .login #loginForm a:hover {
+  color: var(--color-theme-dark);
+  font-weight: var(--font-weight-medium);
+}
+.login-register .container .login .external-logins {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.login-register .container .login .external-logins .label {
+  position: absolute;
+  background-color: var(--color-gray-4);
+  padding: 0 0.8rem;
+  z-index: 1;
+  font-weight: var(--font-weight-medium);
+}
+.login-register .container .login .external-logins .line {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  border: 1px solid var(--color-gray-0);
+  z-index: 0;
+  opacity: 0.5;
+}
+.login-register .container .login .external-socialmedia-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.login-register .container .login .external-socialmedia-buttons .facebook-button {
+  text-align: left;
+}
+.login-register .container .login .external-socialmedia-buttons .facebook-button button {
+  background-image: url(../images/Buttons/facebook-login-button.png);
+  background-repeat: no-repeat;
+  border: none;
+  height: 42px;
+  width: 235px;
+}
+.login-register .container .login .external-socialmedia-buttons .facebook-button button:hover {
+  filter: brightness(90%);
+}
+.login-register .container .login .external-socialmedia-buttons .google-button {
+  text-align: right;
+}
+.login-register .container .login .external-socialmedia-buttons .google-button button {
+  background-image: url(../images/Buttons/google-login-button.png);
+  background-repeat: no-repeat;
+  border: none;
+  height: 42px;
+  width: 235px;
+}
+.login-register .container .login .external-socialmedia-buttons .google-button button:hover {
+  filter: brightness(90%);
+}
+.login-register .container .register {
+  padding: 2rem 1.5rem;
+  width: 49%;
+  background-color: var(--color-gray-4);
+  border-radius: var(--border-radius-small);
+  height: 100%;
+}
+.login-register .container .register h1 {
+  font-size: 1.5rem;
+}
+.login-register .container .register .upper-text {
+  margin-top: 1rem;
+  color: var(--color-gray-5);
+  font-size: 0.875rem;
+  line-height: 2;
+}
+.login-register .container .register #registerForm input,
+.login-register .container .register #registerForm [type=text],
+.login-register .container .register #registerForm [type=email],
+.login-register .container .register #registerForm [type=password] {
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  margin: 0.3rem 0;
+}
+.login-register .container .register #registerForm input:focus,
+.login-register .container .register #registerForm [type=text]:focus,
+.login-register .container .register #registerForm [type=email]:focus,
+.login-register .container .register #registerForm [type=password]:focus {
+  outline: 0;
+  box-shadow: 0 0 3px 0 var(--color-theme-dark);
+}
+.login-register .container .register #registerForm .lower-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.login-register .container .register #registerForm .lower-text a {
+  color: var(--color-theme);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+}
+.login-register .container .register #registerForm .lower-text a:hover {
+  color: var(--color-theme-dark);
+  text-decoration: underline;
+}
+
+@media (min-width: 578px) {
+  .top-menu .menu-links {
+    display: block;
+  }
+  .top-menu .menu-links .social-media {
+    display: inline;
+  }
+  .top-menu .container {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .top-menu .container {
+    justify-content: space-between;
+  }
+  .top-menu .menu-links .links {
+    display: inline;
+  }
 }/*# sourceMappingURL=account.css.map */
