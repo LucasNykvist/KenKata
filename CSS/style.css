@@ -1089,6 +1089,70 @@ section .container .section-info button:hover {
   border-radius: var(--border-radius-small);
 }
 
+.subscribe-section {
+  background-color: var(--color-gray-4);
+}
+.subscribe-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-section .container .subscribe-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 540px;
+  height: 100%;
+  margin: 6rem 0;
+}
+.subscribe-section .container .subscribe-now h2 {
+  font-family: var(--font-play);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-36);
+}
+.subscribe-section .container .subscribe-now h2 span {
+  color: var(--color-theme);
+}
+.subscribe-section .container .subscribe-now p {
+  margin-top: 1rem;
+  font-weight: var(--font-weight-regular);
+  font-size: 1rem;
+}
+.subscribe-section .container .subscribe-now .email {
+  margin-top: 1rem;
+}
+.subscribe-section .container .subscribe-now .email #emailBoxForm {
+  position: relative;
+}
+.subscribe-section .container .subscribe-now .email #emailBoxForm input {
+  position: absolute;
+  border-radius: var(--border-radius-medium);
+  padding: 1rem;
+  width: 100%;
+  height: 55px;
+  outline: none;
+  border: 1px solid var(--color-gray-2);
+}
+.subscribe-section .container .subscribe-now .email #emailBoxForm button {
+  border: none;
+  border-radius: var(--border-radius-medium);
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 100px;
+  height: 47px;
+  background-color: var(--color-theme);
+  color: var(--color-white);
+  transition: 0.3s ease-in-out;
+}
+.subscribe-section .container .subscribe-now .email #emailBoxForm button:hover {
+  background-color: var(--color-theme-dark);
+}
+.subscribe-section .container .gray-area {
+  width: 540px;
+  height: 313px;
+  background-color: var(--color-gray-1);
+}
+
 @media (min-width: 578px) {
   .top-menu .menu-links {
     display: block;
