@@ -401,6 +401,7 @@ body {
   background-color: var(--color-gray-4);
   border-radius: var(--border-radius-small);
   height: 100%;
+  margin-bottom: 5rem;
 }
 .login-register .container .register h1 {
   font-size: 1.5rem;
@@ -441,6 +442,15 @@ body {
 .login-register .container .register #registerForm .lower-text a:hover {
   color: var(--color-theme-dark);
   text-decoration: underline;
+}
+
+footer {
+  background-color: var(--color-dark);
+}
+footer .container {
+  padding: 2rem 0rem;
+  font-size: 1rem;
+  color: var(--color-white);
 }
 
 @media (min-width: 578px) {

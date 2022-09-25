@@ -490,6 +490,7 @@ body {
             background-color: var(--color-gray-4);
             border-radius: var(--border-radius-small);
             height: 100%;
+            margin-bottom: 5rem;
 
             h1 {
                 font-size: 1.5rem;
@@ -543,6 +544,16 @@ body {
 
 
         }
+    }
+}
+
+footer {
+    background-color: var(--color-dark);
+
+    .container {
+        padding: 2rem 0rem;
+        font-size: 1rem;
+        color: var(--color-white);
     }
 }
 

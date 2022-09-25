@@ -200,6 +200,17 @@ body {
 .main-menu .menu-links .menu-link i {
   font-size: var(--font-size-16);
 }
+.main-menu .menu-links #shuffle {
+  position: relative;
+}
+.main-menu .menu-links #shuffle .badge {
+  position: absolute;
+  top: -1.3rem;
+  left: 0.5rem;
+}
+.main-menu .menu-links #shuffle:hover .badge {
+  background-color: var(--color-theme-dark);
+}
 .main-menu .menu-links #cart {
   position: relative;
 }
@@ -238,6 +249,16 @@ body {
   align-items: center;
 }
 .main-menu nav .browse-categories button:hover {
+  background-color: var(--color-theme-dark);
+}
+.main-menu nav .browse-categories .dropdown-menu {
+  background-color: var(--color-theme);
+  color: var(--color-white);
+}
+.main-menu nav .browse-categories .dropdown-menu .dropdown-item {
+  color: var(--color-white);
+}
+.main-menu nav .browse-categories .dropdown-menu .dropdown-item:hover {
   background-color: var(--color-theme-dark);
 }
 .main-menu nav .special-offers {
@@ -1149,8 +1170,16 @@ section .container .section-info button:hover {
 }
 .subscribe-section .container .gray-area {
   width: 540px;
-  height: 313px;
   background-color: var(--color-gray-1);
+}
+
+footer {
+  background-color: var(--color-dark);
+}
+footer .container {
+  padding: 2rem 0rem;
+  font-size: 1rem;
+  color: var(--color-white);
 }
 
 @media (min-width: 578px) {

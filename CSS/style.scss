@@ -238,6 +238,22 @@ body {
             }
         }
 
+        #shuffle {
+            position: relative;
+
+            .badge {
+                position: absolute;
+                top: -1.3rem;
+                left: 0.5rem;
+            }
+
+            &:hover {
+                .badge {
+                    background-color: var(--color-theme-dark);
+                }
+            }
+        }
+
         #cart {
             position: relative;
 
@@ -287,6 +303,20 @@ body {
                     background-color: var(--color-theme-dark);
                 }
             }
+
+            .dropdown-menu {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+
+                .dropdown-item {
+                    color: var(--color-white);
+
+                    &:hover {
+                        background-color: var(--color-theme-dark);
+                    }
+                }
+            }
+
         }
 
         .special-offers {
@@ -1434,13 +1464,22 @@ section {
 
         .gray-area {
             width: 540px;
-            height: 313px;
             background-color: var(--color-gray-1);
         }
     }
 }
 
 // footer
+
+footer {
+    background-color: var(--color-dark);
+
+    .container {
+        padding: 2rem 0rem;
+        font-size: 1rem;
+        color: var(--color-white);
+    }
+}
 
 @media (min-width: 578px) {
     .top-menu {
