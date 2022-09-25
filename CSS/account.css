@@ -246,6 +246,16 @@ body {
 .main-menu nav .browse-categories button:hover {
   background-color: var(--color-theme-dark);
 }
+.main-menu nav .browse-categories .dropdown-menu {
+  background-color: var(--color-theme);
+  color: var(--color-white);
+}
+.main-menu nav .browse-categories .dropdown-menu .dropdown-item {
+  color: var(--color-white);
+}
+.main-menu nav .browse-categories .dropdown-menu .dropdown-item:hover {
+  background-color: var(--color-theme-dark);
+}
 .main-menu nav .special-offers {
   flex: 7;
   display: flex;

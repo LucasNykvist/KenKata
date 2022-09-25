@@ -292,6 +292,19 @@ body {
                     background-color: var(--color-theme-dark);
                 }
             }
+
+            .dropdown-menu {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+
+                .dropdown-item {
+                    color: var(--color-white);
+
+                    &:hover {
+                        background-color: var(--color-theme-dark);
+                    }
+                }
+            }
         }
 
         .special-offers {
