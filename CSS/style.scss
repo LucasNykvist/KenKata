@@ -1,9 +1,18 @@
+// Bestämde mig för att skriva all CSS i ett .SCSS dokument istället för ett vanligt CSS dokument då koden blir mycket finare, renare, lättare att nå samt förstå. Så det vanliga .CSS dokumentet kan du ignorera)
+// (Vanlig CSS vägrar att nästla för någon anledning, troligen nån sorts extension som jag verkligen inte kan hitta. Så SCSS var mitt bästa alternativ för att få mer ren kod. Därför finns inga SASS delar med här, SCSS har jag bara för att strukturera koden mer proffsigt)
+// (STYLE.CSS.MAP är något som min live sass/scss extension skapar när jag aktiverar den. Tror inte att den är relevan alls men låter den vara kvar ifall att)
+
+
+// (Importerings-länk för typsnitten använda på sidan)
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
+
+// (ROOT del, gör så att det blir lättare att nå färger, storlekar och annat genom att på sätt och vis deklarera variabler med fasta namn och värden)
 :root {
     --color-theme: #20D3C2;
     --color-theme-light: #edfcfa;
     --color-theme-dark: #0E153D;
+    --color-theme-dark-light: #50546E;
     --color-dark: #080C24;
     --color-white: #FFFFFF;
     --color-gray-0: #AAAAAA;
@@ -11,6 +20,7 @@
     --color-gray-2: #E3E3E3;
     --color-gray-3: #EEEEEE;
     --color-gray-4: #F6F6F6;
+    --color-gray-5: #777777;
     --color-product-instock: #82D8C6;
     --color-product-outofstock: #FE6C6C;
     --font-play: 'Play', sans-serif;
@@ -30,6 +40,7 @@
 }
 
 // general
+// (Detta är kod som ska göra det enklare att göra vissa saker "globala", allstå alla element av specifik klass ska se ut på visst sätt) 
 
 html,
 body {
@@ -67,7 +78,14 @@ body {
     color: var(--color-product-outofstock);
 }
 
-// top-menu
+.required {
+    color: var(--color-theme);
+}
+
+// --- MAIN PAGE
+
+// MENU
+// (Enbart Flexbox. Menyn är teknikst sätt uppdelad i 3 delar, en topp sektion, en main sektion och en en sorts navigations sektion som är nästlad inuti main-menu)
 
 .top-menu {
     background-color: var(--color-theme);
@@ -151,8 +169,6 @@ body {
     }
 
 }
-
-// main-menu
 
 .main-menu {
     background-color: var(--color-white);
@@ -337,6 +353,8 @@ body {
 }
 
 // section
+// (Denna del heter enbart section då det är en sorts "main section" den är väldigt stor och ska fånga ögat)
+// (Den är byggd med FLEXBOX)
 
 section {
     background-color: var(--color-gray-3);
@@ -391,6 +409,7 @@ section {
 }
 
 // info-boxes
+// (Denna del består av FLEXBOX, och även lite TRANSITIONS)
 
 .info-boxes {
     display: flex;
@@ -452,6 +471,9 @@ section {
 }
 
 // shop-by-category
+// (Denna sektion är uppdelad i två för att inte göra så att en class/id får extremt mycket kod i sig.)
+// (Categories-top består av FLEXBOX)
+// (Categories-main består av GRID. Specifikt har jag använt grid-area-template då det blir enklare att läsa av i koden, och i min åsikt blir det även lättare att skriva koden. Nackdelen här kan man anse vara att det blir mycket kod, vilket är varför jag delade upp sektionen i två delar)
 
 .categories-top {
     margin: 7rem 0 0 0;
@@ -588,6 +610,7 @@ section {
 }
 
 // new-arrivals
+// (Här är en blandning av BOOTSTRAP och egen kod då det såklart är enklast att inte bygga ALLT frång grund till topp. Flexbox, positioning och transitions användes mycket här)
 
 .new-arrivals {
     margin: 7rem 0 0 0;
@@ -751,6 +774,7 @@ section {
 }
 
 // special-offer
+// (Flexbox använde jag här, i min åsikt enklast och snabbast)
 
 .special-offer {
     display: flex;
@@ -836,6 +860,7 @@ section {
 }
 
 // featured products
+// (Detta är i princip en copy-paste från new-arrivals delen med utbytta bilder och text i HTML)
 
 .featured-products {
     margin-top: 7rem;
@@ -993,6 +1018,7 @@ section {
 }
 
 // flash-sale-section
+// (Här är det flexbox som gäller för mig. Istället för att använda border dashed, använde jag outline dashed för att det blev mycket mer likt wireframen)
 
 .flash-sale-section {
     background-color: var(--color-theme-dark);
@@ -1088,6 +1114,7 @@ section {
 }
 
 // top-sellers
+// (Här använde jag mig av GRID, specifikt grid-area-template då jag tycker att det är klarast, koden i min åsikt blir enklare att förstå men möjligen lite längre. Grid i dett fall är i min åsikt bäst då lite mer "irriterande" strukturer på divar blir simplare med just grid-are-templare, man får liksom en bild i koden hur det är strukturerat.)
 
 .top-sellers {
     margin-top: 7rem;
@@ -1394,6 +1421,7 @@ section {
 }
 
 // Subscribe-section
+// (Använde flexbox här, vid ev felmeddelanden så ska ytan under input-fältet kunna expandera och visa vad som är fel)
 
 .subscribe-section {
     background-color: var(--color-gray-4);
@@ -1408,7 +1436,8 @@ section {
             justify-content: center;
             width: 540px;
             height: 100%;
-            margin: 6rem 0;
+            margin-top: 4rem;
+            margin-bottom: 7rem;
 
             h2 {
                 font-family: var(--font-play);
@@ -1470,6 +1499,7 @@ section {
 }
 
 // footer
+// (Finns inte så mycket att säga om denna simpla del, använta mig av flexbox)
 
 footer {
     background-color: var(--color-dark);
@@ -1480,6 +1510,252 @@ footer {
         color: var(--color-white);
     }
 }
+
+// --- ACCOUNT PAGE ---
+
+// Account section
+// (Använt flexbox här då jag föredrar det och tycker att det är mer bekvämt att arbeta med)
+
+.account {
+    display: flex;
+    height: 140px;
+    background-color: var(--color-theme-dark-light);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .my-account {
+            h1 {
+                color: var(--color-theme);
+                font-size: 1.5rem;
+                font-weight: var(--font-weight-medium);
+                margin: 0;
+            }
+        }
+
+        .breadcrumb {
+            margin: 0;
+
+            .breadcrumb-item:nth-child(1) {
+                a {
+                    text-decoration: none;
+                    color: var(--color-theme);
+                    font-size: 1rem;
+
+                    &:hover {
+                        color: var(--color-white);
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .breadcrumb-item:nth-child(2) {
+                a {
+                    text-decoration: none;
+                    color: var(--color-white);
+                    font-size: 1rem;
+
+                    &:hover {
+                        color: var(--color-white);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// login & register
+// (Använt flexbox här då jag föredrar det och tycker att det är mer bekvämt att arbeta med)
+// (Förstår inte riktigt vad som menas med att det ska finnas plats för felmeddelanden, men om jag fatta rätt så ska mellanrummet mellan alla forms kunna ökas för att få plats med eventuella felmeddelanden
+
+.login-register {
+    margin-top: 5rem;
+    background-color: var(--color-white);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .login {
+            padding: 1.3rem;
+            width: 49%;
+            background-color: var(--color-gray-4);
+            border-radius: var(--border-radius-small);
+            height: 100%;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            #loginForm {
+
+                [type=checkbox] {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                input [type=text],
+                [type=email],
+                [type=password] {
+                    display: block;
+                    width: 100%;
+                    border-radius: 7px;
+                    border: none;
+                    padding: 0.5rem 0.9rem;
+                    margin: 0.3rem 0;
+
+                    &:focus {
+                        outline: 0;
+                        box-shadow: 0 0 3px 0 var(--color-theme-dark);
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--color-theme);
+                    font-size: 1rem;
+
+                    &:hover {
+                        color: var(--color-theme-dark);
+                        font-weight: var(--font-weight-medium);
+                    }
+                }
+            }
+
+            .external-logins {
+                position: relative;
+                display: flex;
+                justify-content: center;
+
+                .label {
+                    position: absolute;
+                    background-color: var(--color-gray-4);
+                    padding: 0 0.8rem;
+                    z-index: 1;
+                    font-weight: var(--font-weight-medium);
+                }
+
+                .line {
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    border: 1px solid var(--color-gray-0);
+                    z-index: 0;
+                    opacity: 0.5;
+                }
+            }
+
+            .external-socialmedia-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2rem;
+
+                .facebook-button {
+                    text-align: left;
+
+                    button {
+                        background-image: url(../images/Buttons/facebook-login-button.png);
+                        background-repeat: no-repeat;
+                        border: none;
+                        height: 42px;
+                        width: 235px;
+
+                        &:hover {
+                            filter: brightness(90%);
+                        }
+                    }
+                }
+
+                .google-button {
+                    text-align: right;
+
+                    button {
+                        background-image: url(../images/Buttons/google-login-button.png);
+                        background-repeat: no-repeat;
+                        border: none;
+                        height: 42px;
+                        width: 235px;
+
+                        &:hover {
+                            filter: brightness(90%);
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .register {
+            padding: 2rem 1.5rem;
+            width: 49%;
+            background-color: var(--color-gray-4);
+            border-radius: var(--border-radius-small);
+            height: 100%;
+            margin-bottom: 5rem;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .upper-text {
+                margin-top: 1rem;
+                color: var(--color-gray-5);
+                font-size: 0.875rem;
+                line-height: 2;
+            }
+
+            #registerForm {
+
+                input,
+                [type=text],
+                [type=email],
+                [type=password] {
+                    display: block;
+                    width: 100%;
+                    border-radius: 7px;
+                    border: none;
+                    padding: 0.5rem 0.9rem;
+                    margin: 0.3rem 0;
+
+                    &:focus {
+                        outline: 0;
+                        box-shadow: 0 0 3px 0 var(--color-theme-dark);
+                    }
+                }
+
+                .lower-text {
+                    margin-top: 1rem;
+                    font-size: 1rem;
+
+                    a {
+                        color: var(--color-theme);
+                        text-decoration: none;
+                        font-weight: var(--font-weight-medium);
+
+                        &:hover {
+                            color: var(--color-theme-dark);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+            }
+
+
+
+
+        }
+    }
+}
+
+
+
+// --- MEDIA QUERIES (inte satsat på att göra sidan responsiv då det inte var med i kriterierna)
 
 @media (min-width: 578px) {
     .top-menu {
