@@ -65,7 +65,6 @@ body {
     }
 }
 
-
 .bg-theme {
     background-color: var(--color-theme);
 }
@@ -471,139 +470,141 @@ section {
 }
 
 // shop-by-category
-// (Denna sektion är uppdelad i två för att inte göra så att en class/id får extremt mycket kod i sig.)
 // (Categories-top består av FLEXBOX)
 // (Categories-main består av GRID. Specifikt har jag använt grid-area-template då det blir enklare att läsa av i koden, och i min åsikt blir det även lättare att skriva koden. Nackdelen här kan man anse vara att det blir mycket kod, vilket är varför jag delade upp sektionen i två delar)
 
-.categories-top {
-    margin: 7rem 0 0 0;
+.shop-by-category {
 
-    .container {
-        display: flex;
-        justify-content: center;
+    .categories-top {
+        margin: 7rem 0 0 0;
 
-        .categories-header {
+        .container {
             display: flex;
             justify-content: center;
-            flex-direction: column;
 
-            h2 {
+            .categories-header {
                 display: flex;
                 justify-content: center;
-                font-family: var(--font-play);
-                font-size: var(--font-size-36);
-                font-weight: var(--font-weight-bold);
+                flex-direction: column;
 
-                .category-header-span {
-                    color: var(--color-theme);
+                h2 {
+                    display: flex;
+                    justify-content: center;
+                    font-family: var(--font-play);
+                    font-size: var(--font-size-36);
+                    font-weight: var(--font-weight-bold);
+
+                    .category-header-span {
+                        color: var(--color-theme);
+                    }
                 }
-            }
 
-            .underline-svg {
-                margin: 1rem;
-                display: flex;
-                justify-content: center;
-            }
+                .underline-svg {
+                    margin: 1rem;
+                    display: flex;
+                    justify-content: center;
+                }
 
-            p {
-                display: flex;
-                justify-content: start;
-                font-size: var(--font-size-16);
+                p {
+                    display: flex;
+                    justify-content: start;
+                    font-size: var(--font-size-16);
+                }
             }
         }
     }
-}
 
-.categories-main {
-    .container {
-        .categories {
-            display: grid;
-            height: 100%;
-            width: 100%;
-            justify-content: center;
-            grid-template-columns: repeat(5, 214px);
-            grid-template-rows: repeat(3, 214px);
-            grid-template-areas: "men women women kids kids""shoes shoes hats kids kids""shoes shoes sunglasses sunglasses watches";
-            gap: 10px;
-            position: relative;
-
-
-            .categories-info {
-                background-color: var(--color-theme-dark);
-                color: var(--color-theme);
-                border-radius: 0 5px 0 5px;
-                width: 50%;
-                padding: 0.5rem 0 0.5rem 1rem;
-                position: absolute;
-                bottom: -2.5rem;
-                transition: bottom 0.2s ease-in-out;
+    .categories-main {
+        .container {
+            .categories {
+                display: grid;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                grid-template-columns: repeat(5, 214px);
+                grid-template-rows: repeat(3, 214px);
+                grid-template-areas: "men women women kids kids""shoes shoes hats kids kids""shoes shoes sunglasses sunglasses watches";
+                gap: 10px;
+                position: relative;
 
 
+                .categories-info {
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-theme);
+                    border-radius: 0 5px 0 5px;
+                    width: 50%;
+                    padding: 0.5rem 0 0.5rem 1rem;
+                    position: absolute;
+                    bottom: -2.5rem;
+                    transition: bottom 0.2s ease-in-out;
 
-                p {
-                    font-weight: var(--font-weight-medium);
-                }
 
-                span {
 
-                    color: var(--color-white);
-                    font-size: 14px;
-                }
-            }
+                    p {
+                        font-weight: var(--font-weight-medium);
+                    }
 
-            a {
-                background-color: var(--color-gray-1);
-                border-radius: 10px;
-                transition: 0.3s ease-in-out;
+                    span {
 
-                &:hover {
-
-                    .categories-info {
-                        bottom: 0;
+                        color: var(--color-white);
+                        font-size: 14px;
                     }
                 }
-            }
 
-            .men {
-                grid-area: men;
-                position: relative;
-                overflow: hidden;
-            }
+                a {
+                    background-color: var(--color-gray-1);
+                    border-radius: 10px;
+                    transition: 0.3s ease-in-out;
 
-            .women {
-                grid-area: women;
-                position: relative;
-                overflow: hidden;
-            }
+                    &:hover {
 
-            .kids {
-                grid-area: kids;
-                position: relative;
-                overflow: hidden;
-            }
+                        .categories-info {
+                            bottom: 0;
+                        }
+                    }
+                }
 
-            .shoes {
-                grid-area: shoes;
-                position: relative;
-                overflow: hidden;
-            }
+                .men {
+                    grid-area: men;
+                    position: relative;
+                    overflow: hidden;
+                }
 
-            .hats {
-                grid-area: hats;
-                position: relative;
-                overflow: hidden;
-            }
+                .women {
+                    grid-area: women;
+                    position: relative;
+                    overflow: hidden;
+                }
 
-            .sunglasses {
-                grid-area: sunglasses;
-                position: relative;
-                overflow: hidden;
-            }
+                .kids {
+                    grid-area: kids;
+                    position: relative;
+                    overflow: hidden;
+                }
 
-            .watches {
-                grid-area: watches;
-                position: relative;
-                overflow: hidden;
+                .shoes {
+                    grid-area: shoes;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .hats {
+                    grid-area: hats;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .sunglasses {
+                    grid-area: sunglasses;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .watches {
+                    grid-area: watches;
+                    position: relative;
+                    overflow: hidden;
+                }
             }
         }
     }
