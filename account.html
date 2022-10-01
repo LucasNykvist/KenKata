@@ -11,6 +11,7 @@
 </head>
 <body>
         <!-- Återigen inte så mycket att säga om HTML koden, gjort mitt bästa att hålla den bra strukturerad, fin och ren och även SEO vänlig. -->
+        <!-- Login och register inputs har <p> element under sig där felmeddelanden ska kunna dyka upp -->
 
     <header>
         <div class="top-menu">
@@ -140,10 +141,12 @@
                     <div class="mb-4">
                         <label for="login_email">Email address <span class="required">*</span></label>
                         <input id="login_email" type="email" required>
+                        <p id="loginEmailError"></p>
                     </div>
                     <div class="mb-4">
                         <label for="login_password">Password <span class="required">*</span></label>
                         <input id="login_password" type="password" required>
+                        <p id="loginPasswordError"></p>
                     </div>
                     <div class="mb-4 d-grid">
                         <button type="submit" class="btn btn-lg btn-theme">LOG IN</button>
@@ -188,18 +191,22 @@
                     <div class="mb-4">
                         <label for="register_firstName">First Name <span class="required">*</span></label>
                         <input id="register_firstName" type="text" autocomplete="given-name" required>
+                        <p id="registerFirstNameError"></p>
                     </div>
                     <div class="mb-4">
                         <label for="register_lastName">Last Name <span class="required">*</span></label>
                         <input id="register_lastName" type="text" autocomplete="family-name" required>
+                        <p id="registerLastNameError"></p>
                     </div>
                     <div class="mb-4">
                         <label for="register_email">Email address <span class="required">*</span></label>
                         <input id="register_email" type="email" autocomplete="email" required>
+                        <p id="registerEmailError"></p>
                     </div>
                     <div class="mb-4">
                         <label for="register_password">Password <span class="required">*</span></label>
                         <input id="register_password" type="password" autocomplete="email" required>
+                        <p id="registerPasswordError"></p>
                     </div>
 
                     <p class="lower-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a></p>
